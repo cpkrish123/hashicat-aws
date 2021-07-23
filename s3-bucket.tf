@@ -4,7 +4,7 @@ module "s3-bucket" {
   # insert the 5 required variables here
   acceleration_status ="Enabled"
   bucket = "hash-vivek-bucket"
-  bucket_prefix = "prefix"
+  bucket_prefix = "${var.prefix}"
   policy  = ""
   request_payer  = ""
 }   
